@@ -1,0 +1,37 @@
+html {
+    font-size: 14px;
+}
+
+.blog-masthead {
+    background-color: #b34848;
+    
+}
+
+.blog-title {
+    color: #b34848;
+}
+
+.blog-post-title a {
+    color: #b34848;
+
+}
+
+h2, h3 {
+    color: #b34848;
+}
+
+.blog-masthead:hover {
+    text-decoration: underline;
+}
+
+.blog-post-title a:hover {
+    text-decoration: underline;
+}
+
+h2:hover {
+    text-decoration: underline;
+}
+
+h3:hover {
+    text-decoration: underline;
+}
