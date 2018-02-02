@@ -3,8 +3,7 @@ html {
 }
 
 .blog-masthead {
-    background-color: #b34848;
-    
+    background-color: #b34848;   
 }
 
 .blog-title {
@@ -13,7 +12,6 @@ html {
 
 .blog-post-title a {
     color: #b34848;
-
 }
 
 h2, h3 {
