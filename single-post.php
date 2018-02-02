@@ -32,6 +32,7 @@
         <h2 class="blog-post-title"><a href="#"><?php echo($singlePost['title']) ?></a></h2>
         <p class="blog-post-meta"><?php echo($singlePost['created_at']) ?> by <a href="#"><?php echo($singlePost['author']) ?></a></p>
         <p><?php echo($singlePost['body'])?></p>
+        <button type="button" class="btn btn-default" id="com">Hide comments</button>
         <?php
             $com_id = $_GET['post_id'];
             $sql = "SELECT * FROM comments WHERE comments.post_id = ".$com_id;
@@ -41,9 +42,9 @@
             $comments = $com->fetchAll();
 
                 foreach ($comments as $comment) { ?>
-                    <button type="button" class="btn btn-default" id="com">Hide comments</button>
+                    
                     <hr>
-                    <ul>
+                    <ul class="list">
                         <li><p><h6><i>Comment: </i></h6><?php echo($comment['text']) ?></p></li>
                         <li><h6><i>Author by </i><?php echo($comment['author']) ?></h6></li>
                     </ul>
@@ -53,3 +54,4 @@
  </div><!-- /.row -->
 
 </main><!-- /.container -->
+<script type="text/javascript" src="comments.js"></script>
